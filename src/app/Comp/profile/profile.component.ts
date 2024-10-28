@@ -19,6 +19,16 @@ export class ProfileComponent implements OnInit {
 
 
   ngOnInit(): void {
+
+
+    let sessionlog=window.sessionStorage.getItem("login");
+    if(sessionlog==null){
+      this.router.navigate(["home"]).then(()=>{
+        window.location.reload();
+      })
+    }
+
+
     this.signser.GetByInstId(parseInt(window.sessionStorage.getItem("instaid")!.toString())).subscribe(data=>{
       this.ISign=data;
     },error=>alert(error));

@@ -18,7 +18,12 @@ constructor(private router:Router,private signser:SignupService){}
 
   ngOnInit(): void {
 
-    
+    let sessionlog=window.sessionStorage.getItem("login");
+    if(sessionlog!=null){
+      this.router.navigate(["loginpage"]).then(()=>{
+        window.location.reload();
+      })
+    }    
     
   }
 

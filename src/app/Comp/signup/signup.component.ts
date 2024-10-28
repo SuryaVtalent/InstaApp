@@ -17,6 +17,8 @@ ISign:IInstaDetails;
   }
 
   ngOnInit(): void {
+
+   
     
   }
 

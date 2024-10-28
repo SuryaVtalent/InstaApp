@@ -1,0 +1,66 @@
+<div class="row" >
+    <div class="col-sm-12">
+  
+      <div class="row" >
+        <div class="col-sm-1"></div>
+        <div class="col-sm-1">  </div>
+        <div class="col-sm-10" style="margin-top: 10px;text-align: right;">
+          <div style="font-size: large;font-weight: bold;">
+           {{ISign.userName}}
+            <input type="button" value="Logout" class="btn btn-danger" (click)="btn_logout()" />
+          </div>
+        </div>        
+     </div>
+
+
+     <div class="row">
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-2" style="background-color: white;height: 550px;">
+                    <div class="row" style="text-align: center;">
+                        <div class="col-sm-12">
+                            <img src="app/Images/InstaLogo.png" style="width: 200px;margin-left: 30px;" />
+                            <div>
+                                <a routerLink="homepage">
+                            <img src="app/Images/home.png" style="width:50px;margin-top: 5px;" />
+                                Home</a>
+                        </div>
+                        <div>
+                            <a>
+                            <img src="app/Images/search.png" style="width:50px;margin-top: 5px;" />
+                                Search</a>
+                        </div>
+                        <div>
+                            <a>
+                            <img src="app/Images/reels.png" style="width:50px;margin-top: 5px;" />
+                            Reels </a>
+                        </div>
+                        <div>
+                            <a>
+                            <img src="app/Images/explore.png" style="width:50px;margin-top: 5px;" />
+                              Explore </a>
+                        </div>
+                        <div>
+                            <a routerLink="profile" style="text-decoration: none;color:black">
+                            <img src="app/Images/BMW.jpg" style="width:50px;height:20px;margin-top: 5px;" />
+                              Profile </a>
+                        </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-10">
+                   <router-outlet></router-outlet>
+                </div>
+            </div>
+        </div>
+     </div>
+  
+      
+      
+  
+  
+    </div>
+  </div>
